@@ -218,6 +218,10 @@ a.index-links{
 	font-weight: 400;
 	font-style: italic;
 }
+#countup{
+	display: inline;
+	font-weight: 700;
+}
 
 /*****************************/
 
