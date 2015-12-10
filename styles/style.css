@@ -1,0 +1,412 @@
+/** Set Up **/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Quicksand', sans-serif;
+	background-color: black;
+	padding: 20px 20px 0px 20px;
+	color: white;
+}
+.page-header{
+	margin: 20px 0px 20px 30px;
+	font-weight: 300;
+	font-size: 38px;
+}
+
+/**** INDEXXX **************/
+/** Main Flex Container **/
+.flex-container{
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+}
+.flex-items{
+	height: 90vh;
+}
+a.index-links{
+	width: 100%;
+	background-color: black;
+	text-decoration: none;
+	color: white;
+}
+
+/*Inner Flex Container*/
+.inner-flex-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.f, .find,
+.r, .works,
+.o, .con,
+.y, .hist {
+	font-size: 98px;
+	font-weight: 300;
+}
+ .find, 
+.works,
+.con,
+.hist{
+	color: transparent;
+	transition: color 500ms;
+}
+
+.section1:hover .find,
+.section2:hover .works,
+.section3:hover .con,
+.section4:hover .hist{
+	color: white;
+}
+.section1:hover .find-f,
+.section2:hover .work-r,
+.section3:hover .con-o,
+.section4:hover .hist-y{
+	color: #19B5FE;
+}
+
+/**Inner Flex Items - Order Mods**/
+
+.find-f{ order: 2;}
+.find-i{ order: 1;}
+.find-n{ order: 3;}
+.find-d{ order: 4;}
+.find-m{ order: 5;}
+.find-e{ order: 6;}
+.section1:hover .find-f{ order: 1;}
+.section1:hover .find-i{ order: 2;}
+
+
+.work-w{ order: 1;}
+.work-o{ order: 3;}
+.work-r{ order: 2;}
+.work-k{ order: 4;}
+.work-s{ order: 5;}
+.section2:hover .work-r{ order: 3; }
+.section2:hover .work-o{ order: 2;}
+
+
+.con-c{ order: 1;}
+.con-o{ order: 2;}
+.con-n{ order: 3;}
+.con-t{ order: 4;}
+.con-a{ order: 5;}
+.con-c-sec{ order: 6;}
+.con-t-sec{ order: 7;}
+.section3:hover .con-o{	order: 2;}
+.section3:hover .con-n{	order: 4;}
+
+.hist-h{ order: 1;}
+.hist-i{ order: 7;}
+.hist-s{ order: 3;}
+.hist-t{ order: 4;}
+.hist-o{ order: 5;}
+.hist-r{ order: 6;}
+.hist-y{ order: 2;}
+.section4:hover .hist-i{ order: 2;}
+.section4:hover .hist-y{ order: 7; }
+
+/**** END OF INDEXXX **************/
+
+
+/********* FIND ME ******************/
+.findme-header{
+	margin: 20px 0px 20px 30px;
+	font-weight: 300;
+	font-size: 38px;
+}
+.findme-flex-container{
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.findme-flex-items{
+	width: 70vw;
+	height: 100px;
+	border: 1px solid white;
+	padding: 10px;
+	text-align: center;
+}
+.findme-link{
+	color: white;
+	text-decoration: none;
+	margin: 0 auto;
+	margin-top: 25px;
+	display: inline-block;
+}
+.flex-header{	
+	font-weight: 300;
+	font-size: 30px;
+}
+
+.findme-flex-items:nth-child(1):hover {
+	background-color: #0EBEFF;
+	font-weight: 400;
+}
+.findme-flex-items:nth-child(2):hover {
+	background-color: #76C859;
+}
+.findme-flex-items:nth-child(3):hover {
+	background-color: #EB9532;
+}
+.findme-flex-items:nth-child(4):hover {
+	background-color: #007bb6;
+}
+.findme-flex-items:nth-child(5):hover {
+	background-color: #00aced;
+}
+/************************************/
+
+/************  HISTORY ************/
+.history-header{
+	margin: 50px 0px 50px 30px;
+	font-weight: 300;
+	font-size: 38px;
+}
+.history-flex-container{
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+.job{
+	width: 80vw;
+	padding-bottom: 40px;
+}
+
+.job:nth-child(1),
+.job:nth-child(2){
+	border-bottom: 1px solid white;
+}
+.job:nth-child(2),
+.job:nth-child(3){
+	margin-top: 10px;
+}
+
+.work-name{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	margin-right: 30px;
+}
+
+.work-name h3{
+	font-size: 32px;
+	font-weight: 400;
+}
+.work-name:hover {
+	color: #19B5FE;
+}
+.work-info h4{
+	margin-left: 50px;
+	font-size: 22px;
+	font-weight: 300;
+	padding: 5px;
+}
+.image{
+	width: 220px;
+	height: auto;
+}
+.time{
+	font-size: 16px;
+	color: #19B5FE;
+	font-weight: 400;
+	font-style: italic;
+}
+
+/*****************************/
+
+
+/********* MY WORK ************/
+
+.work-header{
+	margin: 50px 0px 20px 30px;
+	font-weight: 300;
+}
+h6{font-size: 38px}
+
+.drop{
+	width: 90%;
+	margin: 0 auto;
+}
+
+#select1{
+	width: 250px;
+	margin: 0;
+	margin-bottom: 50px;
+	height: 40px;
+
+	border: none;
+	background:  black;
+	color: white;
+	border: none;
+	border-bottom: 1px solid white;
+
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.gobut{
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+	color: white;
+	background-color: black;
+	border: 1px solid white;
+	margin: 0;
+	padding: 0;
+
+}
+
+.gobut:hover{
+	background-color:#19B5FE;
+}
+
+option{
+	font-size: 20px;
+	letter-spacing: 1px;
+	height: 100px;
+	font-weight: 300;
+
+}
+
+iframe{
+	display: block;
+	width: 80%;
+	height: 55vh;
+	margin: 0 auto;
+	border: 3px solid white;
+}
+/*****************************/
+
+
+/************* FOOOTER *********/
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: black;
+	color: white;
+	border-top: 1px solid white;
+}
+.flex-footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer-flex-items{
+	width: 70%;
+	text-align: center;
+}
+.footer-link{
+	text-decoration: none;
+	color: white;
+}
+.footer-link:hover{
+	color: #19B5FE;
+}
+footer h3{	
+	font-weight: 300;
+	font-size: 28px;
+}
+/***********************************/
+
+/** MEDIA QUERIES **/
+@media (max-width: 850px){
+	.flex-container{
+		display: flex;
+		flex-direction: column;
+	}
+	.flex-items{
+		width: 100%;
+		height: 23%;
+	}
+	.inner-flex-container{
+		flex-flow: row nowrap;
+		justify-content: space-around;
+	}
+
+	.inner-flex-items .find,
+	.inner-flex-items .hist,
+	.inner-flex-items .con,
+	.inner-flex-items .works{
+		color: white;
+	}
+
+	.inner-flex-container:hover{ border-bottom: 1px solid white;}
+	.flex-items:hover .inner-flex-items{ order: 0;}
+	.f, .r, .o, .y{ color: #19B5FE;}
+	.inner-flex-items{ order: 0;}
+
+
+	/*** FIND ME**/
+	.findme-flex-items{
+		width: 90vw;
+		height: 90px;
+	}
+	.findme-link{	font-size: 28px;}
+	.flex-header{	font-size: 30px;}
+
+	/** WORK HISTORY**/
+	.work-name h3{ font-size: 28px;}
+
+	.image{
+		padding-top: 10px;
+		width: 140px;
+		height: auto;
+	}
+
+	.work-info h4{
+		margin-left: 20px;
+		font-size: 18px;
+		font-weight: 300;
+		padding: 5px;
+	}
+
+	/** WORK EXAMPLES **/
+	iframe{
+		width: 100%;
+		height: 500px;
+		border: 2px solid white;
+	}
+	#select1{
+		width: 87%;
+		margin: 0;
+		margin-bottom: 75px;
+		height: 40px;
+
+		border: none;
+		background:  black;
+		color: white;
+		border: none;
+		border-bottom: 1px solid white;
+
+		letter-spacing: 1px;
+		font-weight: 300;
+	}
+
+	/** FOOTER **/
+	footer h3{	font-size: 18px;}
+
+
+}
+
+@media (min-width: 1280px){
+	/*NEED TO TEST ON BIG SCREENS TO MAKE SURE EVERYTHING ALIGNS RIGHT!*/
+
+	body{
+		padding: 0px 60px 0px 60px;
+	}
+
+}

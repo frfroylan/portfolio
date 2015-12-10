@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>Froy - Work</title>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head>
+<body>
+	<h6 class="page-header">Past / Current Projects: </h6>
+
+	<div class="drop">
+		<select autofocus id="select1">
+			<option value="blog" selected="selected">Frontend Dev Blog</option>
+			<option value="hiking-blog" >Hiking Blog</option>
+			<option value="miamilo">Mia Milo Concept</option>
+		</select>
+		<button onClick="go('select1');" class="gobut">Go</button>
+		
+		<br>
+
+		<iframe name="frame" src="http://froysthoughts.wordpress.com" ></iframe>
+	</div>
+
+	<footer class="flex-footer">
+		<div class="footer-flex-items"><a href="../pages/findme.html" class="footer-link">
+			<h3 >FINDME</h3>
+		</a></div>
+		<div class="footer-flex-items"><a href="../pages/history.html" class="footer-link">
+			<h3>HISTORY</h3>
+		</a></div>
+		<div class="footer-flex-items"><a href="../pages/contact.html" class="footer-link">
+			<h3 >CONTACT</h3>
+		</a></div>
+		<div class="footer-flex-items"><a href="../index.html" class="footer-link">
+			<h3 >HOME</h3>
+		</a></div>
+	</footer>
+
+<script>
+function go(el)
+{
+	e = document.getElementById(el);
+	site = e.options[e.selectedIndex].value;
+	frame = document.getElementsByName('frame')[0];
+
+	if(site == "blog"){
+		frame.src = 'http://www.froysthoughts.wordpress.com';
+	}
+	else if (site == "hiking-blog"){
+		frame.src = 'http://www.daydreamingofhiking.com';
+
+	}
+	else if(site == "miamilo"){
+		frame.src = 'http://www.miamilo.surge.sh';
+	}
+}
+</script>	
+</body>	
+</html>
