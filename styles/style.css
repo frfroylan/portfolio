@@ -394,6 +394,120 @@ footer h3{
 /***********************************/
 
 /** MEDIA QUERIES **/
+@media (min-width: 0px) and (max-width: 350px){
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	.f, .find,
+	.r, .works,
+	.o, .con,
+	.y, .hist {
+		font-size: 62px;
+
+	}
+
+	footer{
+		height: 40px;
+	}
+
+	.page-header{
+		margin: 0;
+		padding: 0;
+		font-size: 14px;
+	}
+	.fa-stack-overflow{ display: none}
+
+	/*** FIND ME**/
+	.findme-flex-container{
+		margin-top: -15px;
+		padding: 0;
+	}
+	.findme-flex-items{
+		width: 90vw;
+		padding: 0px;
+	}
+	.findme-link{	
+		margin:0;
+		padding: 0;
+		font-size: 5px;
+	}
+	.so{
+		margin-bottom: 55px;
+	} 
+	.flex-header{	
+		margin:0;
+		padding: 0;
+		font-size: 5px;
+	}
+
+	footer h3{	font-size: 5px;}
+
+	#select1{
+		width: 40%;
+		height: 20px;
+		margin: 0;
+		padding: 0;
+		border: none;
+		border-bottom: 1px solid white;
+		font-weight: 300;
+	}
+
+	.w iframe{
+		width: 100%;
+		height: 65%;
+		border: 1px solid white;
+		margin-top: -25px;
+	}
+
+	option{
+		font-size: 14px;
+		letter-spacing: 1px;
+		height: 20px;
+		font-weight: 300;
+	}
+}
+
+@media (max-width: 375px){
+	.f, .find,
+	.r, .works,
+	.o, .con,
+	.y, .hist {
+		font-size: 68px;
+
+	}
+	/*** FIND ME**/
+	.findme-flex-items{
+		width: 90vw;
+		height: 50px;
+	}
+	.findme-link{	
+		font-size: 18px;
+		margin-top: 5px;
+	}
+	.flex-header{	font-size: 18px;}
+
+	footer{
+		height: 50px;
+	}
+	.w iframe{
+		width: 100%;
+		height: 65%;
+		border: 1px solid white;
+		margin-top: -25px;
+	}
+	.c iframe{
+		width: 100%;
+		height: 67%;
+		border: 1px solid white;
+		margin-top: -10px;
+	}
+
+
+}
+
+
+
 @media (max-width: 850px){
 	body{
 		padding: 10px 5px 0px 5px;
@@ -472,11 +586,6 @@ footer h3{
 	}
 
 	/** WORK EXAMPLES **/
-	iframe{
-		width: 100%;
-		height: 500px;
-		border: 2px solid white;
-	}
 	#select1{
 		width: 60%;
 		height: 40px;
@@ -490,8 +599,17 @@ footer h3{
 		font-weight: 300;
 	}
 
+	.w iframe{
+		width: 100%;
+		height: 75%;
+		border: 1px solid white;
+		margin-top: -25px;
+	}
+
 	/** FOOTER **/
 	footer h3{	font-size: 18px;}
+
+
 
 
 }
@@ -502,5 +620,20 @@ footer h3{
 	body{
 		padding: 0px 60px 0px 60px;
 	}
+
+	.c iframe{ height: 700px;}
+
+
+}
+
+@media (min-width: 1600px){
+	/*NEED TO TEST ON BIG SCREENS TO MAKE SURE EVERYTHING ALIGNS RIGHT!*/
+
+	body{
+		padding: 0px 60px 0px 60px;
+	}
+
+	.c iframe{ height: 850px;}
+
 
 }
