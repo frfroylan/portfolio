@@ -394,7 +394,9 @@ footer h3{
 /***********************************/
 
 /** MEDIA QUERIES **/
-@media (min-width: 0px) and (max-width: 350px){
+
+/*** IPHONE 4/5 /  Galaxy S 2 ***/
+@media (min-width: 0px) and (max-width: 325px){
 	body{
 		margin: 0;
 		padding: 0;
@@ -403,21 +405,18 @@ footer h3{
 	.r, .works,
 	.o, .con,
 	.y, .hist {
-		font-size: 62px;
-
+		font-size: 60px;
 	}
-
-	footer{
-		height: 40px;
-	}
-
 	.page-header{
 		margin: 0;
 		padding: 0;
 		font-size: 14px;
 	}
+	/** Stackoverflow Mods ***/
 	.fa-stack-overflow{ display: none}
-
+	.so{
+		margin-bottom: 55px;
+	} 
 	/*** FIND ME**/
 	.findme-flex-container{
 		margin-top: -15px;
@@ -432,17 +431,16 @@ footer h3{
 		padding: 0;
 		font-size: 5px;
 	}
-	.so{
-		margin-bottom: 55px;
-	} 
 	.flex-header{	
 		margin:0;
 		padding: 0;
 		font-size: 5px;
 	}
-
+	/** FOOTER **/
+	footer{		height: 40px;}
 	footer h3{	font-size: 5px;}
 
+	/** WORK DROPDOWN MENU **/
 	#select1{
 		width: 40%;
 		height: 20px;
@@ -452,14 +450,12 @@ footer h3{
 		border-bottom: 1px solid white;
 		font-weight: 300;
 	}
-
 	.w iframe{
 		width: 100%;
 		height: 65%;
 		border: 1px solid white;
 		margin-top: -25px;
 	}
-
 	option{
 		font-size: 14px;
 		letter-spacing: 1px;
@@ -468,13 +464,13 @@ footer h3{
 	}
 }
 
+/** NEW PHONES IPHONE 6 / NOTE 5 **/
 @media (max-width: 375px){
 	.f, .find,
 	.r, .works,
 	.o, .con,
 	.y, .hist {
-		font-size: 68px;
-
+		font-size: 64px;
 	}
 	/*** FIND ME**/
 	.findme-flex-items{
@@ -487,23 +483,24 @@ footer h3{
 	}
 	.flex-header{	font-size: 18px;}
 
-	footer{
-		height: 50px;
-	}
+	/** WORK IFRAME **/
 	.w iframe{
 		width: 100%;
 		height: 65%;
 		border: 1px solid white;
 		margin-top: -25px;
 	}
+	/** CONTACT IFRAME **/
 	.c iframe{
 		width: 100%;
 		height: 67%;
 		border: 1px solid white;
 		margin-top: -10px;
 	}
-
-
+	/** FOOTER **/
+	footer{
+		height: 50px;
+	}
 }
 
 
@@ -610,13 +607,9 @@ footer h3{
 	footer h3{	font-size: 18px;}
 
 
-
-
 }
 
 @media (min-width: 1280px){
-	/*NEED TO TEST ON BIG SCREENS TO MAKE SURE EVERYTHING ALIGNS RIGHT!*/
-
 	body{
 		padding: 0px 60px 0px 60px;
 	}
@@ -627,13 +620,9 @@ footer h3{
 }
 
 @media (min-width: 1600px){
-	/*NEED TO TEST ON BIG SCREENS TO MAKE SURE EVERYTHING ALIGNS RIGHT!*/
-
+	
 	body{
 		padding: 0px 60px 0px 60px;
 	}
-
 	.c iframe{ height: 850px;}
-
-
 }
