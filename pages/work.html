@@ -17,6 +17,7 @@
 
 	<div class="drop">
 		<select autofocus id="select1">
+			<option value="enigmaAudio">enigma-audio.com</option>
 			<option value="blog" selected="selected">froysthoughts.wordpress.com</option>
 			<option value="hiking-blog" >daydreamingofhiking.com</option>
 			<option value="miamilo">miamilo.surge.sh</option>
@@ -60,6 +61,9 @@ function go(el)
 	}
 	else if(site == "miamilo"){
 		frame.src = 'http://www.miamilo.surge.sh';
+	}
+	else if(site == "enigmaAudio"){
+		frame.src = 'http://www.enigma-audio.com';
 	}
 }
 </script>	
