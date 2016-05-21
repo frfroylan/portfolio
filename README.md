@@ -6,7 +6,7 @@ In this project I used:
 - Flexbox
 - Google Fonts
 - Font Awesome
-- JS file from trulycode.com *modified to show only months and days 
-- Google forms to set up my contact form
+- JS code from on History page trulycode.com *modified to show only months and days 
+- Foxform for contact form on contact page
 
 Contact me for further info froyterriquez@gmail.com
