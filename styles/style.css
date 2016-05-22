@@ -18,12 +18,12 @@ body{
 /**** INDEXXX **************/
 /** Main Flex Container **/
 .flex-container{
-	
+
 	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
 	display: -ms-flexbox;  /* TWEENER - IE 10 */
 	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 	display: flex;
-	
+
 	-webkit-justify-content: center;
 	-moz-justify-content: center;
 	-ms-justify-content: center;
@@ -74,7 +74,7 @@ a.index-links{
 	font-size: 98px;
 	font-weight: 300;
 }
- .find, 
+ .find,
 .works,
 .con,
 .hist{
@@ -182,11 +182,10 @@ a.index-links{
 	margin-top: 25px;
 	display: inline-block;
 }
-.flex-header{	
+.flex-header{
 	font-weight: 300;
 	font-size: 38px;
 }
-
 .findme-flex-items:nth-child(1):hover {
 	background-color: #0EBEFF;
 	font-weight: 400;
@@ -221,7 +220,7 @@ a.index-links{
 	-moz-flex-flow: row wrap;
 	-ms-flex-flow: row wrap;
 	flex-flow: row wrap;
-	
+
 	-webkit-justify-content: center;
 	-moz-justify-content: center;
 	-ms-justify-content: center;
@@ -229,12 +228,10 @@ a.index-links{
 
 	margin-bottom: 100px;
 }
-
 .job{
 	width: 80vw;
 	padding-bottom: 40px;
 }
-
 .job:nth-child(1),
 .job:nth-child(2){
 	border-bottom: 1px solid white;
@@ -281,20 +278,15 @@ a.index-links{
 
 /*****************************/
 
-
 /********* MY WORK ************/
-
 .work-header{
 	margin: 50px 0px 20px 30px;
 	font-weight: 300;
 }
-
-
 .drop{
 	width: 90%;
 	margin: 0 auto;
 }
-
 #select1{
 	width: 250px;
 	margin: 0;
@@ -312,7 +304,6 @@ a.index-links{
 	font-weight: 300;
 	font-family: 'Quicksand', sans-serif;
 }
-
 .gobut{
 	width: 40px;
 	height: 40px;
@@ -325,19 +316,15 @@ a.index-links{
 	margin: 0;
 	padding: 0;
 }
-
 .gobut:hover{
 	background-color:#19B5FE;
 }
-
 option{
 	font-size: 20px;
 	letter-spacing: 1px;
 	height: 100px;
 	font-weight: 300;
-
 }
-
 iframe{
 	display: block;
 	width: 80%;
@@ -369,7 +356,7 @@ footer{
 	-moz-justify-content: center;
 	-ms-justify-content: center;
 	justify-content: center;
-	
+
 	-webkit-align-items: center;
 	-moz-align-items: center;
 	-ms-align-items: center;
@@ -387,16 +374,14 @@ footer{
 .footer-link:hover{
 	color: #19B5FE;
 }
-footer h3{	
+.footer-text{
 	font-weight: 300;
 	font-size: 28px;
 }
 /***********************************/
 
 /** MEDIA QUERIES **/
-
-/*** IPHONE 4/5 /  Galaxy S 2 ***/
-@media (min-width: 0px) and (max-width: 325px){
+@media (min-width: 0px) and (max-width: 350px){
 	body{
 		margin: 0;
 		padding: 0;
@@ -405,18 +390,19 @@ footer h3{
 	.r, .works,
 	.o, .con,
 	.y, .hist {
-		font-size: 60px;
+		font-size: 62px;
+
+	}
+	footer{
+		height: 30px;
 	}
 	.page-header{
 		margin: 0;
 		padding: 0;
 		font-size: 14px;
 	}
-	/** Stackoverflow Mods ***/
 	.fa-stack-overflow{ display: none}
-	.so{
-		margin-bottom: 55px;
-	} 
+
 	/*** FIND ME**/
 	.findme-flex-container{
 		margin-top: -15px;
@@ -426,21 +412,24 @@ footer h3{
 		width: 90vw;
 		padding: 0px;
 	}
-	.findme-link{	
+	.findme-link{
 		margin:0;
 		padding: 0;
 		font-size: 5px;
 	}
-	.flex-header{	
+	.so{
+		margin-bottom: 55px;
+	}
+	.flex-header{
 		margin:0;
 		padding: 0;
 		font-size: 5px;
 	}
-	/** FOOTER **/
-	footer{		height: 40px;}
-	footer h3{	font-size: 5px;}
 
-	/** WORK DROPDOWN MENU **/
+	.footer-text{
+		font-size: 14px;
+	}
+
 	#select1{
 		width: 40%;
 		height: 20px;
@@ -450,12 +439,14 @@ footer h3{
 		border-bottom: 1px solid white;
 		font-weight: 300;
 	}
+
 	.w iframe{
 		width: 100%;
 		height: 65%;
 		border: 1px solid white;
 		margin-top: -25px;
 	}
+
 	option{
 		font-size: 14px;
 		letter-spacing: 1px;
@@ -464,46 +455,38 @@ footer h3{
 	}
 }
 
-/** NEW PHONES IPHONE 6 / NOTE 5 **/
 @media (max-width: 375px){
 	.f, .find,
 	.r, .works,
 	.o, .con,
 	.y, .hist {
-		font-size: 64px;
+		font-size: 68px;
+
 	}
 	/*** FIND ME**/
 	.findme-flex-items{
 		width: 90vw;
 		height: 50px;
 	}
-	.findme-link{	
+	.findme-link{
 		font-size: 18px;
 		margin-top: 5px;
 	}
 	.flex-header{	font-size: 18px;}
 
-	/** WORK IFRAME **/
+	footer{
+		height: 50px;
+	}
+	.footer-text{
+		font-size: 14px;
+	}
 	.w iframe{
 		width: 100%;
 		height: 65%;
 		border: 1px solid white;
 		margin-top: -25px;
 	}
-	/** CONTACT IFRAME **/
-	.c iframe{
-		width: 100%;
-		height: 67%;
-		border: 1px solid white;
-		margin-top: -10px;
-	}
-	/** FOOTER **/
-	footer{
-		height: 50px;
-	}
 }
-
-
 
 @media (max-width: 850px){
 	body{
@@ -514,7 +497,7 @@ footer h3{
 		display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
 		display: -ms-flexbox;  /* TWEENER - IE 10 */
 		display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-		
+
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
 		-ms-flex-direction: column;
@@ -559,7 +542,7 @@ footer h3{
 		width: 90vw;
 		height: 70px;
 	}
-	.findme-link{	
+	.findme-link{
 		font-size: 28px;
 		margin-top: 15px;
 	}
@@ -588,41 +571,38 @@ footer h3{
 		height: 40px;
 
 		margin-bottom: 40px;
-	
+
 		border: none;
 		border-bottom: 1px solid white;
 
 		letter-spacing: 1px;
 		font-weight: 300;
 	}
-
 	.w iframe{
 		width: 100%;
 		height: 75%;
 		border: 1px solid white;
 		margin-top: -25px;
 	}
-
 	/** FOOTER **/
-	footer h3{	font-size: 18px;}
-
-
+	footer{
+		height: 50px;
+	}
+	.footer-text{
+		font-size: 18px;
+	}
 }
 
 @media (min-width: 1280px){
+	/*NEED TO TEST ON BIG SCREENS TO MAKE SURE EVERYTHING ALIGNS RIGHT!*/
 	body{
 		padding: 0px 60px 0px 60px;
 	}
-
-	.c iframe{ height: 700px;}
-
-
 }
 
 @media (min-width: 1600px){
-	
+	/*NEED TO TEST ON BIG SCREENS TO MAKE SURE EVERYTHING ALIGNS RIGHT!*/
 	body{
 		padding: 0px 60px 0px 60px;
 	}
-	.c iframe{ height: 850px;}
 }

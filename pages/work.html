@@ -17,9 +17,8 @@
 
 	<div class="drop">
 		<select autofocus id="select1">
-			<option value="enigmaAudio" selected="selected">enigma-audio.com</option>
-			<option value="blog">froysthoughts.wordpress.com</option>
-			<option value="hiking-blog">daydreamingofhiking.com</option>
+			<option value="blog" selected="selected">froysthoughts.wordpress.com</option>
+			<option value="hiking-blog" >daydreamingofhiking.com</option>
 			<option value="miamilo">miamilo.surge.sh</option>
 		</select>
 		<button onClick="go('select1');" class="gobut">Go</button>
@@ -27,21 +26,23 @@
 		ADD A COPY TO CLIPBOARD FEATURE FOR THE WEBSITE THE USER SELECTS
 			- We can add this functionality to the go function -->
 		<br>
-
 	</div>
-	<iframe name="frame" src="http://enigma-audio.com" ></iframe>
+
+
+
+	<iframe name="frame" src="http://froysthoughts.wordpress.com" ></iframe>
 	<footer class="flex-footer">
 		<div class="footer-flex-items"><a href="../pages/findme.html" class="footer-link">
-			<h3 >FINDME</h3>
+			<h3 class="footer-text">FINDME</h3>
 		</a></div>
 		<div class="footer-flex-items"><a href="../pages/history.html" class="footer-link">
-			<h3>HISTORY</h3>
+			<h3 class="footer-text">HISTORY</h3>
 		</a></div>
 		<div class="footer-flex-items"><a href="../pages/contact.html" class="footer-link">
-			<h3 >CONTACT</h3>
+			<h3 class="footer-text">CONTACT</h3>
 		</a></div>
 		<div class="footer-flex-items"><a href="../index.html" class="footer-link">
-			<h3 >HOME</h3>
+			<h3 class="footer-text">HOME</h3>
 		</a></div>
 	</footer>
 
@@ -62,10 +63,7 @@ function go(el)
 	else if(site == "miamilo"){
 		frame.src = 'http://www.miamilo.surge.sh';
 	}
-	else if(site == "enigmaAudio"){
-		frame.src = 'http://www.enigma-audio.com';
-	}
 }
-</script>	
-</body>	
+</script>
+</body>
 </html>
