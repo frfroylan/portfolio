@@ -4,6 +4,7 @@ I decided to try and use flexbox for my portfolio.
 
 In this project I used: 
 - Flexbox
+-Bootstrap
 - Google Fonts
 - Font Awesome
 - JS code from on History page trulycode.com *modified to show only months and days 
