@@ -15,22 +15,47 @@
 <body class="w">
 	<h6 class="page-header">Past/Current Work: </h6>
 
-	<div class="drop">
-		<select autofocus id="select1">
-			<option value="blog" selected="selected">froysthoughts.wordpress.com</option>
-			<option value="hiking-blog" >daydreamingofhiking.com</option>
-			<option value="miamilo">miamilo.surge.sh</option>
-		</select>
-		<button onClick="go('select1');" class="gobut">Go</button>
-		<!-- http://www.htmlgoodies.com/beyond/javascript/article.php/3458851
-		ADD A COPY TO CLIPBOARD FEATURE FOR THE WEBSITE THE USER SELECTS
-			- We can add this functionality to the go function -->
-		<br>
-	</div>
+	<h1 class="work-websites-text">Websites</h1>
+                <div class="work-flex">
+                                <div class="work-flex-items">
+                                                <a class="work-link" href="http://enigma-audio.com"><img src="../images/enigma.png" ></a>
+                                                <a class="work-link" href="http://enigma-audio.com"><h3>Enigma Audio</h3></a>
+                                </div>
+                                <div class="work-flex-items">
+                                                <a class="work-link" href="http://daydreamingofhiking.com" ><img src="../images/ddoh.png" ></a>
+                                               <a class="work-link" href="http://daydreamingofhiking.com" > <h3>Day Dreaming of Hiking</h3></a>
+                                </div>
+                                <div class="work-flex-items">
+                                                <a class="work-link" href="http://miamilo.surge.sh" ><img src="../images/mia.png" ></a>
+                                                <a class="work-link" href="http://miamilo.surge.sh" ><h3>Mia Milo</h3></a>
+                                </div>
+                                <div class="work-flex-items">
+                                                <a class="work-link" href="http://froysthoughts.wordpress.com" ><img src="../images/blog.png" ></a>
+                                               <a class="work-link" href="http://froysthoughts.wordpress.com" > <h3>Blog</h3></a>
+                                </div>
+                </div>
+
+                <h1 class="work-websites-text">Codepens:</h1>
+                <div class="work-flex">
+                                <div class="work-flex-items">
+                                                <a class="work-link"  href="http://codepen.io/Froy/full/ZWdbYW/"><img src="../images/ny.png" ></a>
+                                               <a class="work-link"  href="http://codepen.io/Froy/full/ZWdbYW/"> <h3>Location Card</h3></a>
+                                </div>
+                                <div class="work-flex-items">
+                                               <a class="work-link"  href="http://codepen.io/Froy/full/XdYQGQ/"> <img src="../images/phone.png" ></a>
+                                               <a class="work-link"  href="http://codepen.io/Froy/full/XdYQGQ/"> <h3>Boarding Pass</h3></a>
+                                </div>
+                                <div class="work-flex-items">
+                                               <a class="work-link"  href="http://codepen.io/Froy/full/jbewZq/"> <img src="../images/weeknd.png" ></a>
+                                               <a class="work-link"  href="http://codepen.io/Froy/full/jbewZq/"> <h3>User Profile</h3></a>
+                                </div>
+                                <div class="work-flex-items">
+                                               <a class="work-link"  href="http://codepen.io/Froy/full/JYyPMN/"> <img src="../images/daft.png" ></a>
+                                                <a class="work-link"  href="http://codepen.io/Froy/full/JYyPMN/"><h3>Music Player</h3></a>
+                                </div>
+                </div>
 
 
-
-	<iframe name="frame" src="http://froysthoughts.wordpress.com" ></iframe>
 	<footer class="flex-footer">
 		<div class="footer-flex-items"><a href="../pages/findme.html" class="footer-link">
 			<h3 class="footer-text">FINDME</h3>
@@ -45,25 +70,5 @@
 			<h3 class="footer-text">HOME</h3>
 		</a></div>
 	</footer>
-
-<script>
-function go(el)
-{
-	e = document.getElementById(el);
-	site = e.options[e.selectedIndex].value;
-	frame = document.getElementsByName('frame')[0];
-
-	if(site == "blog"){
-		frame.src = 'http://www.froysthoughts.wordpress.com';
-	}
-	else if (site == "hiking-blog"){
-		frame.src = 'http://www.daydreamingofhiking.com';
-
-	}
-	else if(site == "miamilo"){
-		frame.src = 'http://www.miamilo.surge.sh';
-	}
-}
-</script>
 </body>
 </html>
