@@ -16,19 +16,34 @@
 <body class="c">
 	<h1 class="page-header">Say hello...</h1>
 
-	<!-- Do not change the code! -->
-<div style="margin-bottom: -80px;"><a id="foxyform_embed_link_774572" href="http://www.foxyform.com/">foxyform</a></div>
-<script type="text/javascript">
-(function(d, t){
-   var g = d.createElement(t),
-       s = d.getElementsByTagName(t)[0];
-   g.src = "http://www.foxyform.com/js.php?id=774572&sec_hash=9b99f94639e&width=350px";
-   s.parentNode.insertBefore(g, s);
-}(document, "script"));
-</script>
-<!-- Do not change the code! -->
+	<form id="contactForm" action="http://www.theamigoes.com/cgi-sys/formmail.pl" method="post" name="hgmailer">
+                    <input type="hidden" name="recipient" value="info@theamigoes.com">
+                    <input type="hidden" name="subject" value="FormMail E-Mail">
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label class="label-text">Name:</label>
+                            <input type="text" name="name" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label class="label-text">Email Address:</label>
+                            <input type="email" name="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label class="label-text">Message:</label>
+                            <textarea name="comment" rows="8" class="form-control message" required data-validation-required-message="Please enter your message" maxlength="500"></textarea>
+                        </div>
+                    </div>
+                    <input type="hidden" name="redirect" value="thankyou.html">
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-primary btn-text">Send Message</button>
+                </form>
 
-	<footer class="flex-footer" style="width: 90%;">
+	<footer class="flex-footer" >
 		<div class="footer-flex-items"><a href="../pages/findme.html" class="footer-link">
 			<h3 class="footer-text">FINDME</h3>
 		</a></div>
