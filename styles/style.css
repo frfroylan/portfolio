@@ -3,6 +3,10 @@
 	margin: 0;
 	padding: 0;
 }
+html,body {
+	margin: 0;
+	padding: 0;
+}
 body{
 	font-family: 'Quicksand', sans-serif;
 	background-color: black;
@@ -14,24 +18,14 @@ body{
 	font-weight: 300;
 	font-size: 38px;
 }
-
-/**** INDEXXX **************/
+.link-text:hover{
+	color: #19B5FE;
+}
+/****************  INDEXXX **************/
 /** Main Flex Container **/
 .flex-container{
-
-	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-	display: -ms-flexbox;  /* TWEENER - IE 10 */
-	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 	display: flex;
-
-	-webkit-justify-content: center;
-	-moz-justify-content: center;
-	-ms-justify-content: center;
 	justify-content: center;
-
-	-webkit-align-items: stretch;
-	-moz-align-items: stretch;
-	-ms-align-items: stretch;
 	align-items: stretch;
 }
 .flex-items{
@@ -43,30 +37,13 @@ a.index-links{
 	text-decoration: none;
 	color: white;
 }
-
 /*Inner Flex Container*/
 .inner-flex-container{
 	display: flex;
-	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-	display: -ms-flexbox;  /* TWEENER - IE 10 */
-	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-
-	-webkit-flex-direction: column;
-	-moz-flex-direction: column;
-	-ms-flex-direction: column;
 	flex-direction: column;
-
-	-webkit-align-items: center;
-	-moz-align-items: center;
-	-ms-align-items: center;
 	align-items: center;
-
-	-webkit-justify-content: space-around;
-	-moz-justify-content: space-around;
-	-ms-justify-content: space-around;
 	justify-content: space-around;
 }
-
 .f, .find,
 .r, .works,
 .o, .con,
@@ -81,7 +58,6 @@ a.index-links{
 	color: transparent;
 	transition: color 500ms;
 }
-
 .section1:hover .find,
 .section2:hover .works,
 .section3:hover .con,
@@ -96,7 +72,6 @@ a.index-links{
 }
 
 /**Inner Flex Items - Order Mods**/
-
 .find-f{ order: 2;}
 .find-i{ order: 1;}
 .find-n{ order: 3;}
@@ -106,7 +81,6 @@ a.index-links{
 .section1:hover .find-f{ order: 1;}
 .section1:hover .find-i{ order: 2;}
 
-
 .work-w{ order: 1;}
 .work-o{ order: 3;}
 .work-r{ order: 2;}
@@ -114,7 +88,6 @@ a.index-links{
 
 .section2:hover .work-r{ order: 3; }
 .section2:hover .work-o{ order: 2;}
-
 
 .con-c{ order: 1;}
 .con-o{ order: 2;}
@@ -135,11 +108,8 @@ a.index-links{
 .hist-y{ order: 2;}
 .section4:hover .hist-i{ order: 2;}
 .section4:hover .hist-y{ order: 7; }
-
-/**** END OF INDEXXX **************/
-
-
-/********* FIND ME ******************/
+/******************** END OF INDEXXX *************/
+/************************* FIND ME ******************/
 .findme-header{
 	margin: 20px 0px 20px 30px;
 	font-weight: 300;
@@ -147,25 +117,8 @@ a.index-links{
 }
 .findme-flex-container{
 	display: flex;
-	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-	display: -ms-flexbox;  /* TWEENER - IE 10 */
-	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-
-	-webkit-flex-flow: row wrap;
-	-moz-flex-flow: row wrap;
-	-ms-flex-flow: row wrap;
 	flex-flow: row wrap;
-
-	-webkit-justify-content: space-around;
-	-moz-justify-content: space-around;
-	-ms-justify-content: space-around;
 	justify-content: space-around;
-
-
-
-	-webkit-align-items: center;
-	-moz-align-items: center;
-	-ms-align-items: center;
 	align-items: center;
 }
 .findme-flex-items{
@@ -182,13 +135,15 @@ a.index-links{
 	margin-top: 25px;
 	display: inline-block;
 }
+.findme-link:hover{
+	cursor: pointer;
+}
 .flex-header{
 	font-weight: 300;
 	font-size: 38px;
 }
 .findme-flex-items:nth-child(1):hover {
 	background-color: #0EBEFF;
-	font-weight: 400;
 }
 .findme-flex-items:nth-child(2):hover {
 	background-color: #76C859;
@@ -202,30 +157,12 @@ a.index-links{
 .findme-flex-items:nth-child(5):hover {
 	background-color: #00aced;
 }
-/************************************/
-
-/************  HISTORY ************/
-.history-header{
-	margin: 50px 0px 50px 30px;
-	font-weight: 300;
-	font-size: 38px;
-}
+/*********************************************/
+/************  WORK HISTORY ************/
 .history-flex-container{
 	display:flex;
-	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-	display: -ms-flexbox;  /* TWEENER - IE 10 */
-	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-
-	-webkit-flex-flow: row wrap;
-	-moz-flex-flow: row wrap;
-	-ms-flex-flow: row wrap;
 	flex-flow: row wrap;
-
-	-webkit-justify-content: center;
-	-moz-justify-content: center;
-	-ms-justify-content: center;
 	justify-content: center;
-
 	margin-bottom: 100px;
 }
 .job{
@@ -240,22 +177,20 @@ a.index-links{
 .job:nth-child(3){
 	margin-top: 10px;
 }
-
 .work-name{
 	display: inline-block;
 	text-decoration: none;
 	color: white;
 	margin-right: 30px;
 }
-
-.work-name h3{
+.job-name{
 	font-size: 32px;
 	font-weight: 400;
 }
 .work-name:hover {
 	color: #19B5FE;
 }
-.work-info h4{
+.job-details{
 	margin-left: 50px;
 	font-size: 22px;
 	font-weight: 300;
@@ -275,20 +210,16 @@ a.index-links{
 	display: inline;
 	font-weight: 700;
 }
-
-/*****************************/
-
-/********* MY WORK ************/
+/**********************************************/
+/************** MY WORK *****************/
 .work-header{
 	margin: 50px 0px 20px 30px;
 	font-weight: 300;
 }
-.w h1{
-	border-left: 1px solid white;
-}
 .work-websites-text{
 	font-weight: 400;
 	padding-left: 30px;
+	border-left: 1px solid white;
 }
 .work-flex{
 	display:flex;
@@ -302,31 +233,84 @@ a.index-links{
 	height: 300px;
 	margin: 20px;
 }
+/*Project image*/
 .work-flex-items img{
 	width: 300px;
 	height: 270px;
 	position: relative;
 }
+/*Project name text*/
 .work-name-text{
 	text-align: center;
 	font-size: 28px;
 	font-weight: 300;
 	margin-top: 10px;
 }
+/*Project  links*/
 .work-link{
 	text-decoration: none;
 	color: white;
 }
-iframe{
-	display: block;
-	width: 80%;
-	height: 65vh;
+/*****************************/
+/************* CONTACT *********/
+#contactForm{
 	margin: 0 auto;
-	border: 3px solid white;
+	width: 50%;
+	text-align: center;
+}
+.label-text{
+	font-size: 28px;
+	text-align: left;
+	display: block;
+}
+.control-group{
+	margin-top: 40px;
+}
+.first-control-group{
+	margin-top: 0;
+}
+form input,
+form textarea{
+	width: 100%;
+	margin-left: 50px;
+	margin-top: 20px;
+	background-color: #000;
+	border: 0;
+	border-bottom: 1px solid #fff;
+}
+form input{
+	height: 30px;
+}
+form textarea{
+	height: 200px;
+	border: 1px solid #fff;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea{
+	color: #fff;
+	font-size: 18px;
+}
+form button{
+	float: right;
+	width: 150px;
+	height: 50px;
+	border: 1px solid #fff;
+	margin-top: 20px;
+	color: #fff;
+	background-color: #000;
+	transition: .4s all;
+}
+.btn-text{
+	font-size: 18px;
+}
+form button:hover{
+	background-color: #19B5FE;
+	border: 1px solid #19B5FE;
+	color: #fff;
+	cursor: pointer
 }
 /*****************************/
-
-
 /************* FOOOTER *********/
 footer{
 	position: fixed;
@@ -340,18 +324,7 @@ footer{
 }
 .flex-footer{
 	display: flex;
-	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-	display: -ms-flexbox;  /* TWEENER - IE 10 */
-	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-
-	-webkit-justify-content: center;
-	-moz-justify-content: center;
-	-ms-justify-content: center;
 	justify-content: center;
-
-	-webkit-align-items: center;
-	-moz-align-items: center;
-	-ms-align-items: center;
 	align-items: center;
 }
 .footer-flex-items{
@@ -421,7 +394,8 @@ footer{
 	.inner-flex-items .works{
 		color: white;
 	}
-		.f, .find,
+
+	.f, .find,
 	.r, .works,
 	.o, .con,
 	.y, .hist {
@@ -430,10 +404,22 @@ footer{
 		margin: 0;
 		text-align: center;
 	}
-	.inner-flex-container:hover{ border-bottom: 1px solid white;}
-	.flex-items:hover .inner-flex-items{ order: 0;}
-	.f, .r, .o, .y{ color: #19B5FE;}
-	.inner-flex-items{ order: 0;width: 100%;margin: 0;padding:0;}
+	.inner-flex-container:hover{ 
+		border-bottom: 1px solid white;
+	}
+	.flex-items:hover .inner-flex-items{ 
+		order: 0;
+	}
+	.f, .r, 
+	.o, .y{ 
+		color: #19B5FE;
+	}
+	.inner-flex-items{ 
+		order: 0;
+		width: 100%;
+		margin: 0;
+		padding:0;
+	}
 
 	/*** FIND ME**/
 	.findme-flex-container{
@@ -447,9 +433,11 @@ footer{
 	.findme-link{
 		margin-top: 15px;
 	}
-	.flex-header{	font-size: 24px;}
+	.flex-header{	
+		font-size: 24px;
+	}
 	/** WORK HISTORY**/
-	h1.work-websites-text{
+	.work-websites-text{
 		margin-left: 15px;
 		border-left: 2px solid white;
 	}
@@ -459,32 +447,76 @@ footer{
 		font-weight: 300;
 		margin-top: 10px;
 	}
-
 	.image{
 		padding-top: 10px;
 		width: 140px;
 		height: auto;
 	}
-
-	.work-info h4{
+	.job-details{
 		margin-left: 20px;
 		font-size: 18px;
 		font-weight: 300;
 		padding: 5px;
 	}
-
-	/** WORK EXAMPLES **/
-	#select1{
-		width: 60%;
-		height: 40px;
-
-		margin-bottom: 40px;
-
-		border: none;
-		border-bottom: 1px solid white;
-
-		letter-spacing: 1px;
-		font-weight: 300;
+	/************* CONTACT *********/
+	#contactForm{
+		margin: 0 auto;
+		padding: 15px;
+		width: 100%;
+		text-align: left;
+	}
+	.label-text{
+		font-size: 16px;
+		text-align: left;
+		display: block;
+	}
+	.control-group{
+		margin-top: 20px;
+	}
+	.first-control-group{
+		margin-top: 0;
+	}
+	form input,
+	form textarea{
+		width: 80%;
+		margin-left: 10px;
+		margin-top: 5px;
+		background-color: #000;
+		border: 0;
+		border-bottom: 1px solid #fff;
+	}
+	form input{
+		height: 20px;
+	}
+	form textarea{
+		height: 100px;
+		border: 1px solid #fff;
+	}
+	form input[type="text"],
+	form input[type="email"],
+	form textarea{
+		color: #fff;
+		font-size: 14px;
+	}
+	form button{
+		float: right;
+		width: 130px;
+		height: 35px;
+		border: 1px solid #fff;
+		margin-top: 20px;
+		margin-right: 50px;
+		color: #fff;
+		background-color: #000;
+		transition: .4s all;
+	}
+	.btn-text{
+		font-size: 14px;
+	}
+	form button:hover{
+		background-color: #19B5FE;
+		border: 1px solid #19B5FE;
+		color: #fff;
+		cursor: pointer
 	}
 	/** FOOTER **/
 	footer{
@@ -543,7 +575,7 @@ footer{
 	.inner-flex-items .works{
 		color: white;
 	}
-		.f, .find,
+	.f, .find,
 	.r, .works,
 	.o, .con,
 	.y, .hist {
@@ -552,10 +584,21 @@ footer{
 		margin: 0;
 		text-align: center;
 	}
-	.inner-flex-container:hover{ border-bottom: 1px solid white;}
-	.flex-items:hover .inner-flex-items{ order: 0;}
-	.f, .r, .o, .y{ color: #19B5FE;}
-	.inner-flex-items{ order: 0;width: 100%;margin: 0;padding:0;}
+	.inner-flex-container:hover{ 
+		border-bottom: 1px solid white;
+	}
+	.flex-items:hover .inner-flex-items{ 
+		order: 0;
+	}
+	.f, .r, .o, .y{ 
+		color: #19B5FE;
+	}
+	.inner-flex-items{ 
+		order: 0;
+		width: 100%;
+		margin: 0;
+		padding:0;
+	}
 
 	/*** FIND ME**/
 	.findme-flex-container{
@@ -569,36 +612,88 @@ footer{
 	.findme-link{
 		margin-top: 15px;
 	}
-	.flex-header{	font-size: 24px;}
+	.flex-header{	
+		font-size: 24px;
+	}
 	/** WORK HISTORY**/
-	h1.work-websites-text{margin-left: 15px; border-left: 2px solid white;}
-	.work-name h3{ font-size: 24px;}
-
+	.work-websites-text{
+		margin-left: 15px; 
+		border-left: 2px solid white;
+	}
+	.job-name{ 
+		font-size: 24px;
+	}
 	.image{
 		padding-top: 10px;
 		width: 140px;
 		height: auto;
 	}
-
-	.work-info h4{
+	.job-details{
 		margin-left: 20px;
 		font-size: 18px;
 		font-weight: 300;
 		padding: 5px;
 	}
-
-	/** WORK EXAMPLES **/
-	#select1{
-		width: 60%;
+	/************* CONTACT *********/
+	#contactForm{
+		margin: 0 auto;
+		margin: 30px 15px 0px 15px;
+		padding: 0px;
+		width: 100%;
+		text-align: left;
+	}
+	.label-text{
+		font-size: 18px;
+		text-align: left;
+		display: block;
+	}
+	.control-group{
+		margin-top: 20px;
+	}
+	.first-control-group{
+		margin-top: 0;
+	}
+	form input,
+	form textarea{
+		width: 80%;
+		margin-left: 10px;
+		margin-top: 5px;
+		background-color: #000;
+		border: 0;
+		border-bottom: 1px solid #fff;
+	}
+	form input{
+		height: 20px;
+	}
+	form textarea{
+		height: 150px;
+		border: 1px solid #fff;
+	}
+	form input[type="text"],
+	form input[type="email"],
+	form textarea{
+		color: #fff;
+		font-size: 14px;
+	}
+	form button{
+		float: right;
+		width: 150px;
 		height: 40px;
-
-		margin-bottom: 40px;
-
-		border: none;
-		border-bottom: 1px solid white;
-
-		letter-spacing: 1px;
-		font-weight: 300;
+		border: 1px solid #fff;
+		margin-top: 20px;
+		margin-right: 60px;
+		color: #fff;
+		background-color: #000;
+		transition: .4s all;
+	}
+	.btn-text{
+		font-size: 16px;
+	}
+	form button:hover{
+		background-color: #19B5FE;
+		border: 1px solid #19B5FE;
+		color: #fff;
+		cursor: pointer
 	}
 	/** FOOTER **/
 	footer{
@@ -666,10 +761,22 @@ footer{
 		margin: 0;
 		text-align: center;
 	}
-	.inner-flex-container:hover{ border-bottom: 1px solid white;}
-	.flex-items:hover .inner-flex-items{ order: 0;}
-	.f, .r, .o, .y{ color: #19B5FE;}
-	.inner-flex-items{ order: 0;width: 100%;margin: 0;padding:0;}
+	.inner-flex-container:hover{ 
+		border-bottom: 1px solid white;
+	}
+	.flex-items:hover .inner-flex-items{ 
+		order: 0;
+	}
+	.f, .r, 
+	.o, .y{ 
+		color: #19B5FE;
+	}
+	.inner-flex-items{ 
+		order: 0;
+		width: 100%;
+		margin: 0;
+		padding:0;
+	}
 
 	/*** FIND ME**/
 	.findme-flex-container{
@@ -683,9 +790,12 @@ footer{
 	.findme-link{
 		margin-top: 15px;
 	}
-	.flex-header{	font-size: 24px;}
+	.flex-header{	
+		font-size: 24px;
+	}
+
 	/** WORK HISTORY**/
-	h1.work-websites-text{
+	.work-websites-text{
 		margin-left: 15px; 
 		border-left: 2px solid white;
 	}
@@ -695,20 +805,78 @@ footer{
 		font-weight: 300;
 		margin-top: 10px;
 	}
-
 	.image{
 		padding-top: 10px;
 		width: 140px;
 		height: auto;
 	}
-
-	.work-info h4{
+	.job-details{
 		margin-left: 20px;
 		font-size: 18px;
 		font-weight: 300;
 		padding: 5px;
 	}
-
+	/************* CONTACT *********/
+	#contactForm{
+		margin: 0 auto;
+		margin: 30px 15px 0px 15px;
+		padding: 0px;
+		width: 100%;
+		text-align: left;
+	}
+	.label-text{
+		font-size: 22px;
+		text-align: left;
+		display: block;
+	}
+	.control-group{
+		margin-top: 20px;
+	}
+	.first-control-group{
+		margin-top: 0;
+	}
+	form input,
+	form textarea{
+		width: 80%;
+		margin-left: 10px;
+		margin-top: 5px;
+		background-color: #000;
+		border: 0;
+		border-bottom: 1px solid #fff;
+	}
+	form input{
+		height: 25px;
+	}
+	form textarea{
+		height: 170px;
+		border: 1px solid #fff;
+	}
+	form input[type="text"],
+	form input[type="email"],
+	form textarea{
+		color: #fff;
+		font-size: 14px;
+	}
+	form button{
+		float: right;
+		width: 150px;
+		height: 40px;
+		border: 1px solid #fff;
+		margin-top: 20px;
+		margin-right: 60px;
+		color: #fff;
+		background-color: #000;
+		transition: .4s all;
+	}
+	.btn-text{
+		font-size: 16px;
+	}
+	form button:hover{
+		background-color: #19B5FE;
+		border: 1px solid #19B5FE;
+		color: #fff;
+		cursor: pointer
+	}
 	/** FOOTER **/
 	footer{
 		height: 50px;
@@ -775,10 +943,22 @@ footer{
 		margin: 0;
 		text-align: center;
 	}
-	.inner-flex-container:hover{ border-bottom: 1px solid white;}
-	.flex-items:hover .inner-flex-items{ order: 0;}
-	.f, .r, .o, .y{ color: #19B5FE;}
-	.inner-flex-items{ order: 0;width: 100%;margin: 0;padding:0;}
+	.inner-flex-container:hover{ 
+		border-bottom: 1px solid white;
+	}
+	.flex-items:hover .inner-flex-items{ 
+		order: 0;
+	}
+	.f, .r, 
+	.o, .y{ 
+		color: #19B5FE;
+	}
+	.inner-flex-items{ 
+		order: 0;
+		width: 100%;
+		margin: 0;
+		padding:0;
+	}
 
 	/*** FIND ME**/
 	.findme-flex-container{
@@ -792,14 +972,17 @@ footer{
 	.findme-link{
 		margin-top: 15px;
 	}
-	.flex-header{	font-size: 24px;}
+	.flex-header{	
+		font-size: 24px;
+	}
+
 	/** WORK HISTORY**/
 	.image{
 		padding-top: 10px;
 		width: 140px;
 		height: auto;
 	}
-	.work-info h4{
+	.job-details{
 		margin-left: 20px;
 		font-size: 18px;
 		font-weight: 300;
@@ -816,7 +999,7 @@ footer{
 		width: 330px;
 		height: 300px
 	}
-	h1.work-websites-text{
+	.work-websites-text{
 		font-size: 36px;
 		margin-left: 35px; 
 		border-left: 2px solid white;
@@ -826,6 +1009,68 @@ footer{
 		font-size: 32px;
 		font-weight: 300;
 		margin-top: 10px;
+	}
+	/************* CONTACT *********/
+	#contactForm{
+		margin: 0;
+		margin: 30px 0px 0px 30px;
+		padding: 0px;
+		width: 100%;
+		text-align: left;
+	}
+	.label-text{
+		font-size: 24px;
+		text-align: left;
+		display: block;
+	}
+	.control-group{
+		margin-top: 25px;
+	}
+	.first-control-group{
+		margin-top: 0;
+	}
+	form input,
+	form textarea{
+		width: 80%;
+		margin-left: 15px;
+		margin-top: 15px;
+		background-color: #000;
+		border: 0;
+		border-bottom: 1px solid #fff;
+	}
+	form input{
+		height: 30px;
+	}
+	form textarea{
+		height: 200px;
+		border: 1px solid #fff;
+	}
+	form input[type="text"],
+	form input[type="email"],
+	form textarea{
+		color: #fff;
+		font-size: 14px;
+	}
+	form button{
+		float: right;
+		width: 160px;
+		height: 60px;
+		border: 1px solid #fff;
+		margin-top: 20px;
+		margin-right: 100px;
+		color: #fff;
+		background-color: #000;
+		transition: .4s all;
+	}
+	.btn-text{
+		font-size: 20px;
+		letter-spacing: 1px;
+	}
+	form button:hover{
+		background-color: #19B5FE;
+		border: 1px solid #19B5FE;
+		color: #fff;
+		cursor: pointer
 	}
 	/** FOOTER **/
 	footer{
@@ -882,10 +1127,21 @@ footer{
 		margin: 0;
 		text-align: center;
 	}
-	.inner-flex-container:hover{ border-bottom: 1px solid white;}
-	.flex-items:hover .inner-flex-items{ order: 0;}
-	.f, .r, .o, .y{ color: #19B5FE;}
-	.inner-flex-items{ order: 0;width: 100%;margin: 0;padding:0;}
+	.inner-flex-container:hover{ 
+		border-bottom: 1px solid white;
+	}
+	.flex-items:hover .inner-flex-items{ 
+		order: 0;
+	}
+	.f, .r, .o, .y{ 
+		color: #19B5FE;
+	}
+	.inner-flex-items{ 
+		order: 0;
+		width: 100%;
+		margin: 0;
+		padding:0;
+	}
 
 	/*** FIND ME**/
 	.findme-flex-container{
@@ -910,7 +1166,7 @@ footer{
 		width: 480px;
 		height: 450px
 	}
-	h1.work-websites-text{
+	.work-websites-text{
 		font-size: 36px;
 		margin-left: 35px; 
 		border-left: 2px solid white;
@@ -920,6 +1176,69 @@ footer{
 		font-size: 32px;
 		font-weight: 300;
 		margin-top: 10px;
+	}
+	/************* CONTACT *********/
+	#contactForm{
+		margin: 0;
+		margin: 30px 0px 0px 30px;
+		padding: 0px;
+		width: 100%;
+		text-align: left;
+	}
+	.label-text{
+		font-size: 30px;
+		text-align: left;
+		display: block;
+	}
+	.control-group{
+		margin-top: 30px;
+	}
+	.first-control-group{
+		margin-top: 0;
+	}
+	form input,
+	form textarea{
+		width: 80%;
+		margin-left: 15px;
+		margin-top: 20px;
+		background-color: #000;
+		border: 0;
+		border-bottom: 1px solid #fff;
+	}
+	form input{
+		height: 30px;
+	}
+	form textarea{
+		height: 220px;
+		border: 1px solid #fff;
+	}
+	form input[type="text"],
+	form input[type="email"],
+	form textarea{
+		color: #fff;
+		font-size: 14px;
+	}
+	form button{
+		float: right;
+		width: 190px;
+		height: 70px;
+		border: 1px solid #fff;
+		margin-top: 20px;
+		margin-right: 140px;
+		color: #fff;
+		background-color: #000;
+		transition: .4s all;
+	}
+	.btn-text{
+		font-size: 26px;
+		letter-spacing: 1px;
+		font-weight: 300;
+	}
+	form button:hover{
+		background-color: #19B5FE;
+		border: 1px solid #19B5FE;
+		color: #fff;
+		cursor: pointer
 	}
 	/** FOOTER **/
 	footer{
@@ -945,7 +1264,7 @@ footer{
 		width: 400px;
 		height: 390px
 	}
-	h1.work-websites-text{
+	.work-websites-text{
 		font-size: 36px;
 		margin-left: 35px; 
 		border-left: 2px solid white;
@@ -988,8 +1307,72 @@ footer{
 		font-size: 32px;
 	}
 	/************************************/
+	/************* CONTACT *********/
+	#contactForm{
+		margin: 0;
+		margin: 30px 0px 100px 20px;
+		padding: 0px;
+		width: 100%;
+		text-align: left;
+		overflow: scroll;
+	}
+	.label-text{
+		font-size: 26px;
+		text-align: left;
+		display: block;
+	}
+	.control-group{
+		margin-top: 25px;
+	}
+	.first-control-group{
+		margin-top: 0;
+	}
+	form input,
+	form textarea{
+		width: 80%;
+		margin-left: 30px;
+		margin-top: 10px;
+		background-color: #000;
+		border: 0;
+		border-bottom: 1px solid #fff;
+	}
+	form input{
+		height: 25px;
+	}
+	form textarea{
+		height: 200px;
+		border: 1px solid #fff;
+	}
+	form input[type="text"],
+	form input[type="email"],
+	form textarea{
+		color: #fff;
+		font-size: 14px;
+	}
+	form button{
+		float: right;
+		width: 190px;
+		height: 70px;
+		border: 1px solid #fff;
+		margin-top: 20px;
+		margin-right: 165px;
+		color: #fff;
+		background-color: #000;
+		transition: .4s all;
+	}
+	.btn-text{
+		font-size: 26px;
+		letter-spacing: 1px;
+		font-weight: 300;
+	}
+	form button:hover{
+		background-color: #19B5FE;
+		border: 1px solid #19B5FE;
+		color: #fff;
+		cursor: pointer
+	}
 }
-@media screen and (min-width: 1025px) and (max-width: 1280px){
+@media screen and (min-width: 1025px) and (max-width: 1240px){
 	.page-header{
 		margin: 10px 0px 20px 10px;
 		font-weight: 300;
@@ -1005,7 +1388,7 @@ footer{
 		width: 400px;
 		height: 390px
 	}
-	h1.work-websites-text{
+	.work-websites-text{
 		font-size: 36px;
 		margin-left: 35px; 
 		border-left: 2px solid white;
@@ -1048,6 +1431,183 @@ footer{
 		font-size: 32px;
 	}
 	/************************************/
+	/************* CONTACT *********/
+	#contactForm{
+		margin: 0 auto;
+		margin-bottom: 300px;
+		width: 60%;
+		text-align: center;
+	}
+	.label-text{
+		font-size: 28px;
+		text-align: left;
+		display: block;
+	}
+	.control-group{
+		margin-top: 40px;
+	}
+	.first-control-group{
+		margin-top: 0;
+	}
+	form input,
+	form textarea{
+		width: 100%;
+		margin-left: 50px;
+		margin-top: 20px;
+		background-color: #000;
+		border: 0;
+		border-bottom: 1px solid #fff;
+	}
+	form input{
+		height: 30px;
+	}
+	form textarea{
+		height: 200px;
+		border: 1px solid #fff;
+	}
+	form input[type="text"],
+	form input[type="email"],
+	form textarea{
+		color: #fff;
+		font-size: 18px;
+	}
+	form button{
+		float: right;
+		width: 150px;
+		height: 50px;
+		border: 1px solid #fff;
+		margin-top: 20px;
+		color: #fff;
+		background-color: #000;
+		transition: .4s all;
+	}
+	.btn-text{
+		font-size: 18px;
+	}
+	form button:hover{
+		background-color: #19B5FE;
+		border: 1px solid #19B5FE;
+		color: #fff;
+		cursor: pointer
+	}
+}
+@media screen and (min-width: 1241px) and (max-width: 1280px){
+	.page-header{
+		margin: 10px 0px 20px 10px;
+		font-weight: 300;
+		font-size: 46px;
+	}
+	/** WORK EXAMPLES **/
+	.work-flex-items{
+		width: 400px;
+		height: 530px;
+		text-align: center;
+	}
+	.work-flex-items img{
+		width: 400px;
+		height: 390px
+	}
+	.work-websites-text{
+		font-size: 36px;
+		margin-left: 35px; 
+		border-left: 2px solid white;
+	}
+	.work-name-text{
+		text-align: center;
+		font-size: 32px;
+		font-weight: 300;
+		margin-top: 10px;
+	}
+	/********* FIND ME ******************/
+	.findme-header{
+		margin: 20px 0px 20px 30px;
+		font-weight: 300;
+		font-size: 38px;
+	}
+	.findme-flex-container{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		align-items: center;
+		margin-bottom: 120px;
+	}
+	.findme-flex-items{
+		width: 70vw;
+		height: 80px;
+		border: 1px solid white;
+		padding: 10px;
+		text-align: center;
+	}
+	.findme-link{
+		color: white;
+		text-decoration: none;
+		margin: 0 auto;
+		margin-top: 25px;
+		display: inline-block;
+	}
+	.flex-header{
+		font-weight: 300;
+		font-size: 32px;
+	}
+	/************************************/
+	/************* CONTACT *********/
+	#contactForm{
+		margin: 0 auto;
+		width: 60%;
+		text-align: center;
+	}
+	.label-text{
+		font-size: 28px;
+		text-align: left;
+		display: block;
+	}
+	.control-group{
+		margin-top: 40px;
+	}
+	.first-control-group{
+		margin-top: 0;
+	}
+	form input,
+	form textarea{
+		width: 100%;
+		margin-left: 50px;
+		margin-top: 20px;
+		background-color: #000;
+		border: 0;
+		border-bottom: 1px solid #fff;
+	}
+	form input{
+		height: 30px;
+	}
+	form textarea{
+		height: 200px;
+		border: 1px solid #fff;
+	}
+	form input[type="text"],
+	form input[type="email"],
+	form textarea{
+		color: #fff;
+		font-size: 18px;
+	}
+	form button{
+		float: right;
+		width: 150px;
+		height: 50px;
+		border: 1px solid #fff;
+		margin-top: 20px;
+		color: #fff;
+		background-color: #000;
+		transition: .4s all;
+	}
+	.btn-text{
+		font-size: 18px;
+	}
+	form button:hover{
+		background-color: #19B5FE;
+		border: 1px solid #19B5FE;
+		color: #fff;
+		cursor: pointer
+	}
 }
 
 /*15" screen*/
@@ -1067,7 +1627,7 @@ footer{
 		width: 400px;
 		height: 390px
 	}
-	h1.work-websites-text{
+	.work-websites-text{
 		font-size: 36px;
 		margin-left: 35px; 
 		border-left: 2px solid white;
@@ -1110,6 +1670,64 @@ footer{
 		font-size: 32px;
 	}
 	/************************************/
+	/************* CONTACT *********/
+	#contactForm{
+		margin: 0 auto;
+		width: 60%;
+		text-align: center;
+	}
+	.label-text{
+		font-size: 28px;
+		text-align: left;
+		display: block;
+	}
+	.control-group{
+		margin-top: 20px;
+	}
+	.first-control-group{
+		margin-top: 0;
+	}
+	form input,
+	form textarea{
+		width: 100%;
+		margin-left: 50px;
+		margin-top: 10px;
+		background-color: #000;
+		border: 0;
+		border-bottom: 1px solid #fff;
+	}
+	form input{
+		height: 30px;
+	}
+	form textarea{
+		height: 200px;
+		border: 1px solid #fff;
+	}
+	form input[type="text"],
+	form input[type="email"],
+	form textarea{
+		color: #fff;
+		font-size: 18px;
+	}
+	form button{
+		float: right;
+		width: 150px;
+		height: 50px;
+		border: 1px solid #fff;
+		margin-top: 20px;
+		color: #fff;
+		background-color: #000;
+		transition: .4s all;
+	}
+	.btn-text{
+		font-size: 18px;
+	}
+	form button:hover{
+		background-color: #19B5FE;
+		border: 1px solid #19B5FE;
+		color: #fff;
+		cursor: pointer
+	}
 }
 
 /*19" screen*/
@@ -1148,7 +1766,7 @@ footer{
 		width: 450px;
 		height: 420px
 	}
-	h1.work-websites-text{
+	.work-websites-text{
 		font-size: 46px;
 		margin-left: 35px; 
 		margin-top: 40px;
@@ -1163,10 +1781,10 @@ footer{
 	.history-flex-container{
 		margin-bottom: 150px;
 	}
-	.work-name h3{
+	.job-name{
 		font-size: 38px;
 	}
-	.work-info h4{
+	.job-details{
 		margin-left: 20px;
 		font-size: 28px;
 		font-weight: 300;
@@ -1205,7 +1823,7 @@ footer{
 		width: 450px;
 		height: 420px
 	}
-	h1.work-websites-text{
+	.work-websites-text{
 		font-size: 46px;
 		margin-left: 35px; 
 		margin-top: 40px;
@@ -1220,10 +1838,10 @@ footer{
 	.history-flex-container{
 		margin-bottom: 150px;
 	}
-	.work-name h3{
+	.job-name{
 		font-size: 38px;
 	}
-	.work-info h4{
+	.job-details{
 		margin-left: 20px;
 		font-size: 28px;
 		font-weight: 300;
@@ -1262,7 +1880,7 @@ footer{
 		width: 450px;
 		height: 420px
 	}
-	h1.work-websites-text{
+	.work-websites-text{
 		font-size: 46px;
 		margin-left: 35px; 
 		margin-top: 40px;
@@ -1277,10 +1895,10 @@ footer{
 	.history-flex-container{
 		margin-bottom: 150px;
 	}
-	.work-name h3{
+	.job-name{
 		font-size: 38px;
 	}
-	.work-info h4{
+	.job-details{
 		margin-left: 20px;
 		font-size: 28px;
 		font-weight: 300;
