@@ -1,6 +1,15 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Froy - History</title>
+	<!-- 
+		Author: Froy Terriquez
+		email: froyterriquez@gmail.com
+		date: 12/11/15
+		updated: 05/22/16
+		udpated: 09/2016
+		Available for freelance work.
+	-->
+	<title>Froy | History</title>
 
 	<meta NAME="viewport" CONTENT="width=device-width, initial-scale=1">
 	<meta NAME="google" CONTENT="notranslate" />
@@ -8,9 +17,12 @@
 	<meta NAME="description" CONTENT="Froy Terriquez is an aspiring front end web developer. This are his previous employers." />
 	<meta NAME="robots" CONTENT="index, follow">
 	<meta NAME="googlebot" CONTENT="noodp">
-
 	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="../styles/style.css">
+	<script src="scripts/prefixfree.min.js" type="text/javascript"></script>
+	
+</head>
+<body>
 	<script>
 	/*
 	* Basic Count Up from Date and Time
@@ -23,11 +35,11 @@
 		upTime('sep,08,2015,00:00:00'); 
 	}
 	function upTime(countTo) {
-		now = new Date();
-		countTo = new Date(countTo);
-		difference = (now-countTo);
-		days=Math.floor(difference/(60*60*1000*24)*1);
-		months = (days / 30).toFixed(0);
+		var now = new Date();
+		var countTo = new Date(countTo);
+		var difference = (now-countTo);
+		var days=Math.floor(difference/(60*60*1000*24)*1);
+		var months = (days / 30).toFixed(0);
 		days = days % 30;
 		document.getElementById('days').firstChild.nodeValue = days;
 		document.getElementById('months').firstChild.nodeValue = months;
@@ -35,50 +47,52 @@
 		upTime.to=setTimeout(function(){ upTime(countTo); },1000);
 	}
 	</script>
-</head>
-<body>
-	<h1 class="page-header">Work History...</h1>
-	<div class="history-flex-container">
-		<div class="history-flex-items job">
-			<a href="http://www.extron.com/" target="_blank" class="work-name"><h3 >Extron Electronics</h3></a><a href="http://www.extron.com/" target="_blank">
-			<img src="http://logonoid.com/images/extron-logo.png" class="image" alt="Extron Electronics"></a>
-			<div class="work-info">
-				<h4>09/15 - Present 
-					<div id="countup"><span class="time">
-						<span id="months">00</span>
-						<span>mos.</span>
-						<span id="days">00</span>
-						<span class="timeRefDays">days.</span>
-					</div>
-				</h4>
-				<h4>Web Content Specialist</h4>
-				<h4>Anaheim, CA</h4>
-				<h4>Ref: Tri Loung</h4>
-				<h4>Tel: (714)491-1500 Ext. 6491 </h4>
-			</div>
+	<header>
+		<h1 class="page-header">Work History...</h1>
+	</header>
+	<main>
+		<div class="history-flex-container">
+			<div class="job"><!-- EXTRON -->
+				<a href="http://www.extron.com/" target="_blank" class="work-name"><h3 class="job-name">Extron Electronics</h3></a><a href="http://www.extron.com/" target="_blank">
+				<img src="http://logonoid.com/images/extron-logo.png" class="image" alt="Extron Electronics"></a>
+				<div class="work-info">
+					<h4 class="job-details">09/15 - Present 
+						<div id="countup"><span class="time">
+							<span id="months">00</span>
+							<span>mos.</span>
+							<span id="days">00</span>
+							<span class="timeRefDays">days.</span>
+						</div>
+					</h4>
+					<h4 class="job-details">Web Content Specialist</h4>
+					<h4 class="job-details">Anaheim, CA</h4>
+					<h4 class="job-details">Ref: Tri Loung</h4>
+					<h4 class="job-details">Tel: (714)491-1500 Ext. 6491 </h4>
+				</div>
+			</div><!-- /EXTRON -->
+			<div class="job"><!-- MCT -->
+				<a href="http://www.mcttechnology.com/" target="_blank" class="work-name"><h3 class="job-name">MCT Technology</h3></a>
+				<a href="http://www.mcttechnology.com/" target="_blank" ><img src="http://mcttechnology.com/wp-content/uploads/2014/01/mct-technology-logo-small-2.png" alt="MCT Technology"  class="image"></a>
+				<div class="work-info">
+					<h4 class="job-details">01/14 - 08/15 <span class="time">(1 yr. 7mos.)</span></h4>
+					<h4 class="job-details">Program Specialist</h4>
+					<h4 class="job-details">Brea, CA</h4>
+					<h4 class="job-details">Ref: Araceli Gutierrez</h4>
+					<h4 class="job-details">Tel: (800)880-9973</h4>
+				</div>
+			</div><!-- /MCT -->
+			<div class="job"><!-- MIMIS -->
+				<a href="http://www.mimiscafe.com/" target="_blank" class="work-name"><h3 class="job-name">Mimis Caf&egrave;</h3></a>
+				<div class="work-info">
+					<h4 class="job-details">05/08 - 04/14 <span class="time">(5 yr.11mos.)</span></h4>
+					<h4 class="job-details">Shift Leader</h4>
+					<h4 class="job-details">Chino, CA</h4>
+					<h4 class="job-details">Ref: Monique Fiona</h4>
+					<h4 class="job-details">Tel: (714)956-2233</h4>
+				</div>
+			</div><!-- /MIMIS -->
 		</div>
-		<div class="history-flex-items job">
-			<a href="http://www.mcttechnology.com/" target="_blank" class="work-name"><h3 >MCT Technology</h3></a>
-			<a href="http://www.mcttechnology.com/" target="_blank" ><img src="http://mcttechnology.com/wp-content/uploads/2014/01/mct-technology-logo-small-2.png" alt="MCT Technology"  class="image"></a>
-			<div class="work-info">
-				<h4>01/14 - 08/15 <span class="time">(1 yr. 7mos.)</span></h4>
-				<h4>Program Specialist</h4>
-				<h4>Brea, CA</h4>
-				<h4>Ref: Araceli Gutierrez</h4>
-				<h4>Tel: (800)880-9973</h4>
-			</div>
-		</div>
-		<div class="history-flex-items job">
-			<a href="http://www.mimiscafe.com/" target="_blank" class="work-name"><h3 >Mimis Caf&egrave;</h3></a>
-			<div class="work-info">
-				<h4>05/08 - 04/14 <span class="time">(5 yr.11mos.)</span></h4>
-				<h4>Shift Leader</h4>
-				<h4>Chino, CA</h4>
-				<h4>Ref: Monique Fiona</h4>
-				<h4>Tel: (714)956-2233</h4>
-			</div>
-		</div>
-	</div>
+	</main>
 	<footer class="flex-footer">
 		<div class="footer-flex-items"><a href="../pages/findme.html" class="footer-link">
 			<h3 class="footer-text">FINDME</h3>

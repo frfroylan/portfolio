@@ -251,6 +251,7 @@ a.index-links{
 /************* CONTACT *********/
 #contactForm{
 	margin: 0 auto;
+	padding-bottom: 200px;
 	width: 50%;
 	text-align: center;
 	box-sizing: border-box;
@@ -383,6 +384,7 @@ footer{
 		height: 100%;
 		margin: 0 auto;
 		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 
 	.inner-flex-items .find,
@@ -564,7 +566,8 @@ footer{
 		width: 90%;
 		height: 100%;
 		margin: 0 auto;
-		padding-top: 30px;
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 
 	.inner-flex-items .find,
@@ -741,7 +744,8 @@ footer{
 		width: 90%;
 		height: 100%;
 		margin: 0 auto;
-		padding-top: 30px;
+		padding-top: 45px;
+		padding-bottom: 45px;
 	}
 
 	.inner-flex-items .find,
@@ -796,6 +800,7 @@ footer{
 	.work-websites-text{
 		margin-left: 15px; 
 		border-left: 2px solid white;
+		font-size: 30px;
 	}
 	.work-name-text{
 		text-align: center;
@@ -923,7 +928,8 @@ footer{
 		width: 90%;
 		height: 100%;
 		margin: 0 auto;
-		padding-top: 30px;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 
 	.inner-flex-items .find,
@@ -1107,7 +1113,8 @@ footer{
 		width: 90%;
 		height: 100%;
 		margin: 0 auto;
-		padding-top: 30px;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 
 	.inner-flex-items .find,
@@ -1165,13 +1172,13 @@ footer{
 		height: 450px
 	}
 	.work-websites-text{
-		font-size: 36px;
+		font-size: 42px;
 		margin-left: 35px; 
 		border-left: 2px solid white;
 	}
 	.work-name-text{
 		text-align: center;
-		font-size: 32px;
+		font-size: 36px;
 		font-weight: 300;
 		margin-top: 10px;
 	}
@@ -1252,6 +1259,15 @@ footer{
 		font-weight: 300;
 		font-size: 46px;
 	}
+	.f, .find,
+	.r, .works,
+	.o, .con,
+	.y, .hist {
+		font-size: 78px;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
 	/** WORK EXAMPLES **/
 	.work-flex-items{
 		width: 400px;
@@ -1310,6 +1326,7 @@ footer{
 		margin: 0;
 		margin: 30px 0px 100px 20px;
 		padding: 0px;
+		padding-bottom: 50px;
 		width: 100%;
 		text-align: left;
 		overflow: scroll;
@@ -1375,6 +1392,15 @@ footer{
 		margin: 10px 0px 20px 10px;
 		font-weight: 300;
 		font-size: 46px;
+	}
+	.f, .find,
+	.r, .works,
+	.o, .con,
+	.y, .hist {
+		font-size: 78px;
+		padding: 0;
+		margin: 0;
+		text-align: center;
 	}
 	/** WORK EXAMPLES **/
 	.work-flex-items{
@@ -1495,6 +1521,15 @@ footer{
 		font-weight: 300;
 		font-size: 46px;
 	}
+	.f, .find,
+	.r, .works,
+	.o, .con,
+	.y, .hist {
+		font-size: 84px;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
 	/** WORK EXAMPLES **/
 	.work-flex-items{
 		width: 400px;
@@ -1614,6 +1649,15 @@ footer{
 		margin: 10px 0px 20px 10px;
 		font-weight: 300;
 		font-size: 46px;
+	}
+	.f, .find,
+	.r, .works,
+	.o, .con,
+	.y, .hist {
+		font-size: 84px;
+		padding: 0;
+		margin: 0;
+		text-align: center;
 	}
 	/** WORK EXAMPLES **/
 	.work-flex-items{
@@ -1752,7 +1796,8 @@ footer{
 	}
 
 	.findme-flex-container{
-		margin-top: 80px;
+		margin-top: 50px;
+		margin-bottom: 170px;
 	}
 	/** WORK EXAMPLES **/
 	.work-flex-items{
@@ -1803,6 +1848,15 @@ footer{
 		margin: 10px 0px 20px 10px;
 		font-weight: 300;
 		font-size: 58px;
+	}
+	.f, .find,
+	.r, .works,
+	.o, .con,
+	.y, .hist {
+		font-size: 100px;
+		padding: 0;
+		margin: 0;
+		text-align: center;
 	}
 	.work-websites-text{
 		margin-left: 60px;
@@ -1860,6 +1914,15 @@ footer{
 		margin: 10px 0px 20px 10px;
 		font-weight: 300;
 		font-size: 58px;
+	}
+	.f, .find,
+	.r, .works,
+	.o, .con,
+	.y, .hist {
+		font-size: 120px;
+		padding: 0;
+		margin: 0;
+		text-align: center;
 	}
 	.work-websites-text{
 		margin-left: 60px;
