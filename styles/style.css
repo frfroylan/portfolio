@@ -286,7 +286,7 @@ form textarea{
 form input[type="text"],
 form input[type="email"],
 form textarea{
-	color: #fff;
+	color: #19B5FE;
 	font-size: 18px;
 }
 form button{
@@ -339,6 +339,22 @@ footer{
 .footer-text{
 	font-weight: 300;
 	font-size: 28px;
+}
+/***********************************/
+/*****THANK YOU PAGE***********/
+.thank-you-container{
+	text-align: center;
+}
+.thank-you-text{
+	font-size: 38px;
+	font-weight: 300;
+	margin: 30px 40px 0px 40px;
+	text-align: left;
+}
+.hiking-image{
+	width:700px;
+	height: auto;
+	margin-top: 15px;
 }
 /***********************************/
 
@@ -494,7 +510,7 @@ footer{
 	form input[type="text"],
 	form input[type="email"],
 	form textarea{
-		color: #fff;
+		color: #19B5FE;
 		font-size: 14px;
 	}
 	form button{
@@ -524,6 +540,17 @@ footer{
 	}
 	.footer-text{
 		font-size: 14px;
+	}
+	.thank-you-text{
+		font-size: 24px;
+		font-weight: 300;
+		margin: 30px 10px 0px 10px;
+		text-align: auto;
+	}
+	.hiking-image{
+		width:300px;
+		height: auto;
+		margin-top: 45px;
 	}
 }
 @media screen and (min-width: 361px) and (max-width: 413px){
@@ -673,7 +700,7 @@ footer{
 	form input[type="text"],
 	form input[type="email"],
 	form textarea{
-		color: #fff;
+		color: #19B5FE;
 		font-size: 14px;
 	}
 	form button{
@@ -702,6 +729,19 @@ footer{
 	}
 	.footer-text{
 		font-size: 16px;
+	}
+	/**THANK YOU ***/
+	.thank-you-text{
+		font-size: 24px;
+		font-weight: 300;
+		margin: 30px 10px 0px 10px;
+		text-align: auto;
+		line-height: 36px;
+	}
+	.hiking-image{
+		width:350px;
+		height: auto;
+		margin-top: 45px;
 	}
 }
 @media screen and (min-width: 414px) and (max-width: 425px){
@@ -857,7 +897,7 @@ footer{
 	form input[type="text"],
 	form input[type="email"],
 	form textarea{
-		color: #fff;
+		color: #19B5FE;
 		font-size: 14px;
 	}
 	form button{
@@ -886,6 +926,19 @@ footer{
 	}
 	.footer-text{
 		font-size: 16px;
+	}
+	/**THANK YOU ***/
+	.thank-you-text{
+		font-size: 24px;
+		font-weight: 300;
+		margin: 30px 10px 0px 10px;
+		text-align: auto;
+		line-height: 50px;
+	}
+	.hiking-image{
+		width:400px;
+		height: auto;
+		margin-top: 45px;
 	}
 }
 @media screen and (min-width: 426px) and (max-width: 767px){
@@ -1052,7 +1105,7 @@ footer{
 	form input[type="text"],
 	form input[type="email"],
 	form textarea{
-		color: #fff;
+		color: #19B5FE;
 		font-size: 14px;
 	}
 	form button{
@@ -1220,7 +1273,7 @@ footer{
 	form input[type="text"],
 	form input[type="email"],
 	form textarea{
-		color: #fff;
+		color: #19B5FE;
 		font-size: 14px;
 	}
 	form button{
@@ -1251,6 +1304,19 @@ footer{
 	}
 	.footer-text{
 		font-size: 28px;
+	}
+	/**THANK YOU ***/
+	.thank-you-text{
+		font-size: 40px;
+		font-weight: 300;
+		margin: 30px 20px 0px 30px;
+		text-align: auto;
+		line-height: 80px;
+	}
+	.hiking-image{
+		width:700px;
+		height: auto;
+		margin-top: 55px;
 	}
 }
 @media screen and (min-width: 851px) and (max-width: 1024px){
@@ -1361,7 +1427,7 @@ footer{
 	form input[type="text"],
 	form input[type="email"],
 	form textarea{
-		color: #fff;
+		color: #19B5FE;
 		font-size: 14px;
 	}
 	form button{
@@ -1492,7 +1558,7 @@ footer{
 	form input[type="text"],
 	form input[type="email"],
 	form textarea{
-		color: #fff;
+		color: #19B5FE;
 		font-size: 18px;
 	}
 	form button{
@@ -1525,7 +1591,7 @@ footer{
 	.r, .works,
 	.o, .con,
 	.y, .hist {
-		font-size: 84px;
+		font-size: 82px;
 		padding: 0;
 		margin: 0;
 		text-align: center;
@@ -1619,7 +1685,7 @@ footer{
 	form input[type="text"],
 	form input[type="email"],
 	form textarea{
-		color: #fff;
+		color: #19B5FE;
 		font-size: 18px;
 	}
 	form button{
@@ -1748,7 +1814,7 @@ footer{
 	form input[type="text"],
 	form input[type="email"],
 	form textarea{
-		color: #fff;
+		color: #19B5FE;
 		font-size: 18px;
 	}
 	form button{
@@ -1781,6 +1847,11 @@ footer{
 	}
 	.work-websites-text{
 		margin-left: 40px;
+	}
+	.hiking-image{
+		width:900px;
+		height: auto;
+		margin-top: 75px;
 	}
 }
 
@@ -1839,6 +1910,12 @@ footer{
 	}
 	.footer-text{
 		font-size: 38px;
+	}
+	/** THANK YOU IMAGE **/
+	.hiking-image{
+		width:900px;
+		height: auto;
+		margin-top: 75px;
 	}
 }
 
@@ -1906,6 +1983,12 @@ footer{
 	.footer-text{
 		font-size: 38px;
 	}
+	/** THANK YOU IMAGE **/
+	.hiking-image{
+		width:1000px;
+		height: auto;
+		margin-top: 75px;
+	}
 }
 
 /*23" screen*/
@@ -1972,9 +2055,19 @@ footer{
 	.footer-text{
 		font-size: 38px;
 	}
+	/** THANK YOU IMAGE **/
+	.hiking-image{
+		width:1000px;
+		height: auto;
+		margin-top: 75px;
+	}
 }
 
 /*24" screen*/
 @media screen and (min-width: 1921px) {
-
+	.hiking-image{
+		width:1200px;
+		height: auto;
+		margin-top: 95px;
+	}
 }
